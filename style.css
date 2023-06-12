@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("background.jpg") ;
+    background-size: 100%;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+        .transparent-bg {
+            background-color: transparent;
+          }
+          
+      padding: 20px;
+      width: 400px;
+      margin: 0 auto;
+      border: 0px solid #ddd;
+      border-radius: 4px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Example</h2>
+  <form action="#" method="POST">
+    <fieldset>
+      <legend>Form Information</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="fee">Fee:</label>
+      <input type="number" id="fee" name="fee" required>
+
+      <label for="submission_date">Submission Date:</label>
+      <input type="date" id="submission_date" name="submission_date" required>
+
+      <label for="bank">Bank:</label>
+      <input type="text" id="bank" name="bank" required>
+
+      <label for="branch">Branch:</label>
+      <input type="text" id="branch" name="branch" required>
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+</html>
